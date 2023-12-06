@@ -9,7 +9,7 @@ package paquete01;
  *
  * @author reroes
  */
-public class Ejemplo01 {
+public class Ejemplo014 {
 
     /**
      * @param args the command line arguments
@@ -17,13 +17,14 @@ public class Ejemplo01 {
     public static void main(String[] args) {
         //Sirve para acumular valores en una variable y presentarla al final
         
-        String cadenaFinal = "";
+        int cadenaFinal = 0;
         for (int i = 1; i <= 10; i++) {
-            cadenaFinal = String.format("%s%d",cadenaFinal, i);
+            
+            cadenaFinal = cadenaFinal + i;
         }
         
         for (int i = 1; i < 11; i++) {
-            cadenaFinal = String.format("%s%d",cadenaFinal, i);
+            cadenaFinal = cadenaFinal + i;
         }
         System.out.printf("%s", cadenaFinal);
 
